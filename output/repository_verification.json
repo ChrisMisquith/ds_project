@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "checks_passed": 20,
+  "checks": [
+    "Exactly the two requested study notebooks",
+    "01_data_cleaning_and_baseline.ipynb: all cells executed in order",
+    "01_data_cleaning_and_baseline.ipynb: no execution errors",
+    "02_feature_reduction.ipynb: all cells executed in order",
+    "02_feature_reduction.ipynb: no execution errors",
+    "Baseline notebook includes complete preprocessing implementation",
+    "Feature notebook includes the full search and study implementation",
+    "README.md: all local document links exist",
+    "methodology.md: all local document links exist",
+    "README.md: all local document links exist",
+    "No uncertainty-study files included",
+    "No old notebook names or local user paths in project text",
+    "Exactly the two scoped PDF reports",
+    "heart_disease_project_report.pdf: complete PDF text and page count",
+    "heart_disease_project_report.pdf: no excluded-study references",
+    "heart_disease_feature_selection.pdf: complete PDF text and page count",
+    "heart_disease_feature_selection.pdf: no excluded-study references",
+    "README headline numbers match freshly generated metrics",
+    "README demonstration inputs match fitted subset",
+    "Generated model files are excluded from Git"
+  ],
+  "notebook_sha256": {
+    "01_data_cleaning_and_baseline.ipynb": "3b1a32ba6e90273dc1e4f8191d1afe2815a4040e5db1bdfc215690599b5fb3ac",
+    "02_feature_reduction.ipynb": "c1bae31e991036bdf8ec63790c7db01592c8357fc2ec4439a851fb50f3dca68d"
+  }
+}

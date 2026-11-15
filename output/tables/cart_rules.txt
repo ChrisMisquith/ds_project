@@ -1,0 +1,43 @@
+|--- ST_Slope_Up <= 0.50
+|   |--- ChestPainType_ASY <= 0.50
+|   |   |--- MaxHR <= 136.50
+|   |   |   |--- Age <= 64.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- Age >  64.50
+|   |   |   |   |--- class: 1
+|   |   |--- MaxHR >  136.50
+|   |   |   |--- Oldpeak <= 0.25
+|   |   |   |   |--- class: 1
+|   |   |   |--- Oldpeak >  0.25
+|   |   |   |   |--- class: 0
+|   |--- ChestPainType_ASY >  0.50
+|   |   |--- Sex_F <= 0.50
+|   |   |   |--- MaxHR <= 147.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- MaxHR >  147.50
+|   |   |   |   |--- class: 1
+|   |   |--- Sex_F >  0.50
+|   |   |   |--- FastingBS <= 0.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- FastingBS >  0.50
+|   |   |   |   |--- class: 1
+|--- ST_Slope_Up >  0.50
+|   |--- ChestPainType_ASY <= 0.50
+|   |   |--- missingindicator_Cholesterol <= 0.50
+|   |   |   |--- Age <= 56.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- Age >  56.50
+|   |   |   |   |--- class: 0
+|   |   |--- missingindicator_Cholesterol >  0.50
+|   |   |   |--- class: 0
+|   |--- ChestPainType_ASY >  0.50
+|   |   |--- Oldpeak <= 0.45
+|   |   |   |--- MaxHR <= 151.50
+|   |   |   |   |--- class: 0
+|   |   |   |--- MaxHR >  151.50
+|   |   |   |   |--- class: 0
+|   |   |--- Oldpeak >  0.45
+|   |   |   |--- MaxHR <= 132.50
+|   |   |   |   |--- class: 1
+|   |   |   |--- MaxHR >  132.50
+|   |   |   |   |--- class: 1

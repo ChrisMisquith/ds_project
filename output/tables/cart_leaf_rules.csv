@@ -1,0 +1,16 @@
+leaf,rule,training_records,predicted_class,fitted_disease_fraction
+11,ST_Slope is not Up AND ChestPainType is ASY AND Sex is not F AND MaxHR <= 147.50,222,1,0.9594594594594594
+19,ST_Slope is Up AND ChestPainType is not ASY AND Cholesterol is observed AND Age <= 56.50,157,0,0.006369426751592357
+8,ST_Slope is not Up AND ChestPainType is not ASY AND MaxHR > 136.50 AND Oldpeak > 0.25,53,0,0.41509433962264153
+20,ST_Slope is Up AND ChestPainType is not ASY AND Cholesterol is observed AND Age > 56.50,43,0,0.13953488372093023
+4,ST_Slope is not Up AND ChestPainType is not ASY AND MaxHR <= 136.50 AND Age <= 64.50,39,1,0.9230769230769231
+24,ST_Slope is Up AND ChestPainType is ASY AND Oldpeak <= 0.45 AND MaxHR <= 151.50,38,0,0.10526315789473684
+12,ST_Slope is not Up AND ChestPainType is ASY AND Sex is not F AND MaxHR > 147.50,35,1,0.8285714285714286
+14,ST_Slope is not Up AND ChestPainType is ASY AND Sex is F AND FastingBS <= 0.50,33,1,0.6363636363636364
+25,ST_Slope is Up AND ChestPainType is ASY AND Oldpeak <= 0.45 AND MaxHR > 151.50,32,0,0.46875
+28,ST_Slope is Up AND ChestPainType is ASY AND Oldpeak > 0.45 AND MaxHR > 132.50,20,1,0.6
+5,ST_Slope is not Up AND ChestPainType is not ASY AND MaxHR <= 136.50 AND Age > 64.50,15,1,0.6
+7,ST_Slope is not Up AND ChestPainType is not ASY AND MaxHR > 136.50 AND Oldpeak <= 0.25,14,1,0.7142857142857143
+27,ST_Slope is Up AND ChestPainType is ASY AND Oldpeak > 0.45 AND MaxHR <= 132.50,13,1,1.0
+21,ST_Slope is Up AND ChestPainType is not ASY AND Cholesterol is missing,10,0,0.5
+15,ST_Slope is not Up AND ChestPainType is ASY AND Sex is F AND FastingBS > 0.50,10,1,1.0

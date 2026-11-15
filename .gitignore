@@ -1,0 +1,20 @@
+# Local environments and credentials
+.venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Caches, temporary files and generated model binaries
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+tmp/
+*.joblib
+
+# User-supplied prediction files
+output/feature_selection/tables/user_predictions.csv
+.DS_Store
+Thumbs.db

@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-15",
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "seed": 42,
+  "budgets": [
+    3,
+    5,
+    7,
+    11
+  ],
+  "selection_model": "LR C=1",
+  "score": "F1",
+  "compact_rule": "smallest budget within 0.01 absolute inner F1 of all 11",
+  "scope": "734 original development records; original holdout excluded",
+  "secondary_model": "fixed RF on LR-selected subsets, not separately RF-optimized"
+}

@@ -1,0 +1,13 @@
+Feature,Type,Meaning / handling
+Age,Numeric,Age in years
+Sex,Categorical,"F or M, as recorded in the source"
+ChestPainType,Categorical,TA=typical angina; ATA=atypical; NAP=non-anginal; ASY=asymptomatic
+RestingBP,Numeric,Resting blood pressure in mm Hg; zero treated as missing
+Cholesterol,Numeric,Serum cholesterol; zero treated as missing
+FastingBS,Binary,1 if fasting blood sugar >120 mg/dL; otherwise 0
+RestingECG,Categorical,"Normal, ST, or LVH"
+MaxHR,Numeric,"Maximum heart rate achieved, beats per minute"
+ExerciseAngina,Categorical,Exercise-induced angina: Y or N
+Oldpeak,Numeric,Exercise-related ST depression; zero/negative values retained
+ST_Slope,Categorical,"Up, Flat, or Down"
+HeartDisease,Target,1=heart disease; 0=normal

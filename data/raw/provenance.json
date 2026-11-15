@@ -1,0 +1,17 @@
+{
+  "dataset": "Heart Failure Prediction Dataset",
+  "uploader": "fedesoriano",
+  "source_page": "https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction",
+  "download_url": "https://www.kaggle.com/api/v1/datasets/download/fedesoriano/heart-failure-prediction",
+  "retrieved_at_utc": "2026-10-23T07:15:47.901293+00:00",
+  "access_checked_client_date": "2026-10-23",
+  "license_label_observed": "Database: Open Database, Contents: Copyright Original Authors",
+  "license_metadata_source": "https://www.kaggle.com/api/v1/datasets/list?search=heart-failure-prediction",
+  "license_note": "Retain source attribution; consult the source terms when redistributing derived data.",
+  "zip_sha256": "c1a34f1c5a34a806b3cb7b6bff343169021f16d8d12fe10c04158eaed6b5edb9",
+  "csv_sha256": "948420b084d8a3a0ca42b8419fce9aee175879e43f8aedf712377899a67aa49b",
+  "rows": 918,
+  "input_features": 11,
+  "target": "HeartDisease (1=heart disease, 0=normal)",
+  "source_version_last_updated": "2021-09-10T18:11:57.517Z"
+}

@@ -1,0 +1,190 @@
+{
+  "completed": true,
+  "protocol": {
+    "date": "2026-11-15",
+    "outer_folds": 5,
+    "inner_folds": 3,
+    "seed": 42,
+    "budgets": [
+      3,
+      5,
+      7,
+      11
+    ],
+    "selection_model": "LR C=1",
+    "score": "F1",
+    "compact_rule": "smallest budget within 0.01 absolute inner F1 of all 11",
+    "scope": "734 original development records; original holdout excluded",
+    "secondary_model": "fixed RF on LR-selected subsets, not separately RF-optimized"
+  },
+  "patients": 734,
+  "source_sha256": "948420b084d8a3a0ca42b8419fce9aee175879e43f8aedf712377899a67aa49b",
+  "final_compact_budget": 3,
+  "final_compact_features": [
+    "ST_Slope",
+    "Cholesterol",
+    "RestingECG"
+  ],
+  "final_inner_scores": {
+    "3": 0.864370830130917,
+    "5": 0.8650450238720095,
+    "7": 0.8673771146111572,
+    "11": 0.8711514259860517
+  },
+  "summary": [
+    {
+      "family": "LR",
+      "budget": 3,
+      "accuracy_mean": 0.8405926754,
+      "accuracy_std": 0.0224125859,
+      "f1_mean": 0.8625301265,
+      "f1_std": 0.0219738003,
+      "recall_mean": 0.9065943993,
+      "recall_std": 0.0449550376,
+      "specificity_mean": 0.7591608392,
+      "specificity_std": 0.0248059612,
+      "roc_auc_mean": 0.8785410845,
+      "roc_auc_std": 0.0199356747
+    },
+    {
+      "family": "LR",
+      "budget": 5,
+      "accuracy_mean": 0.8433137639,
+      "accuracy_std": 0.0226517294,
+      "f1_mean": 0.8640224815,
+      "f1_std": 0.0214924877,
+      "recall_mean": 0.9016561277,
+      "recall_std": 0.0418546464,
+      "specificity_mean": 0.7712820513,
+      "specificity_std": 0.0327468081,
+      "roc_auc_mean": 0.8909409009,
+      "roc_auc_std": 0.0222230694
+    },
+    {
+      "family": "LR",
+      "budget": 7,
+      "accuracy_mean": 0.8487652595,
+      "accuracy_std": 0.0223228544,
+      "f1_mean": 0.8679417557,
+      "f1_std": 0.0201869833,
+      "recall_mean": 0.8991568805,
+      "recall_std": 0.0334122043,
+      "specificity_mean": 0.7865268065,
+      "specificity_std": 0.0327123602,
+      "roc_auc_mean": 0.9051799631,
+      "roc_auc_std": 0.0194266716
+    },
+    {
+      "family": "LR",
+      "budget": 11,
+      "accuracy_mean": 0.8651477029,
+      "accuracy_std": 0.0340406001,
+      "f1_mean": 0.8799512116,
+      "f1_std": 0.0322445936,
+      "recall_mean": 0.8967780789,
+      "recall_std": 0.0531956257,
+      "specificity_mean": 0.8263403263,
+      "specificity_std": 0.0417470739,
+      "roc_auc_mean": 0.9260190958,
+      "roc_auc_std": 0.0114439435
+    },
+    {
+      "family": "RF",
+      "budget": 3,
+      "accuracy_mean": 0.8310502283,
+      "accuracy_std": 0.0201952522,
+      "f1_mean": 0.8528377437,
+      "f1_std": 0.0196402694,
+      "recall_mean": 0.8868714243,
+      "recall_std": 0.0430795294,
+      "specificity_mean": 0.7621445221,
+      "specificity_std": 0.037286785,
+      "roc_auc_mean": 0.8658284323,
+      "roc_auc_std": 0.0325597066
+    },
+    {
+      "family": "RF",
+      "budget": 5,
+      "accuracy_mean": 0.8514677104,
+      "accuracy_std": 0.0271937333,
+      "f1_mean": 0.8701710262,
+      "f1_std": 0.0251513027,
+      "recall_mean": 0.9016561277,
+      "recall_std": 0.0427553426,
+      "specificity_mean": 0.7895104895,
+      "specificity_std": 0.0305103185,
+      "roc_auc_mean": 0.8991288045,
+      "roc_auc_std": 0.0264830441
+    },
+    {
+      "family": "RF",
+      "budget": 7,
+      "accuracy_mean": 0.8473860777,
+      "accuracy_std": 0.0127783767,
+      "f1_mean": 0.8654811189,
+      "f1_std": 0.0086139078,
+      "recall_mean": 0.88678109,
+      "recall_std": 0.0230946876,
+      "specificity_mean": 0.7987412587,
+      "specificity_std": 0.0478297595,
+      "roc_auc_mean": 0.9063644576,
+      "roc_auc_std": 0.0204764898
+    },
+    {
+      "family": "RF",
+      "budget": 11,
+      "accuracy_mean": 0.8569844376,
+      "accuracy_std": 0.0355241683,
+      "f1_mean": 0.8734220239,
+      "f1_std": 0.034805737,
+      "recall_mean": 0.8968081903,
+      "recall_std": 0.0591010396,
+      "specificity_mean": 0.807972028,
+      "specificity_std": 0.0311066126,
+      "roc_auc_mean": 0.9308493875,
+      "roc_auc_std": 0.0175696663
+    }
+  ],
+  "adaptive_summary": [
+    {
+      "family": "LR",
+      "accuracy_mean": 0.8433137639,
+      "accuracy_std": 0.0226517294,
+      "f1_mean": 0.8645547503,
+      "f1_std": 0.0222011539,
+      "recall_mean": 0.9065943993,
+      "recall_std": 0.0449550376,
+      "specificity_mean": 0.7652214452,
+      "specificity_std": 0.0233539214
+    },
+    {
+      "family": "RF",
+      "accuracy_mean": 0.8378529494,
+      "accuracy_std": 0.0249041227,
+      "f1_mean": 0.858548098,
+      "f1_std": 0.0237178134,
+      "recall_mean": 0.8918096959,
+      "recall_std": 0.046423068,
+      "specificity_mean": 0.7712354312,
+      "specificity_std": 0.0368149331
+    }
+  ],
+  "stability": [
+    {
+      "budget": 3,
+      "mean_pairwise_jaccard": 0.65,
+      "folds": 5
+    },
+    {
+      "budget": 5,
+      "mean_pairwise_jaccard": 0.5,
+      "folds": 5
+    },
+    {
+      "budget": 7,
+      "mean_pairwise_jaccard": 0.543888888888889,
+      "folds": 5
+    }
+  ],
+  "warning": "Development evaluation; no external validation or claim of universally important clinical variables."
+}

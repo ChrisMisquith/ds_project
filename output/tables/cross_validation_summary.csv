@@ -1,0 +1,6 @@
+model,cv_f1_mean,cv_f1_std,cv_recall_mean,cv_roc_auc_mean,candidate_settings,best_parameters
+Logistic regression,0.8760524091433168,0.027686829919476054,0.8916591388136104,0.9267665186364373,6,"{""model__C"": 0.1, ""model__class_weight"": null}"
+Random forest,0.8756736165001298,0.026160325231122654,0.8990364348087926,0.9315147865283366,8,"{""model__max_depth"": 8, ""model__max_features"": ""sqrt"", ""model__min_samples_leaf"": 2}"
+Tuned CART,0.8645514469227603,0.031280919136161475,0.8869015356820235,0.9044188181586555,90,"{""model__ccp_alpha"": 0.0, ""model__class_weight"": null, ""model__max_depth"": 4, ""model__min_samples_leaf"": 10}"
+Unrestricted CART,0.8169846207738084,0.052197550531075075,0.8078891900030112,0.8002383012952119,1,{}
+Majority baseline,0.7122785080547587,0.0022870669986072927,1.0,0.5,1,{}

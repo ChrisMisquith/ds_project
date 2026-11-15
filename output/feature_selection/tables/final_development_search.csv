@@ -1,0 +1,57 @@
+step,added_feature,subset,inner_f1,inner_f1_sd
+1,Age,"[""Age""]",0.6987401551998724,0.023622199780570077
+1,Sex,"[""Sex""]",0.7350553125803962,0.002939291269381523
+1,ChestPainType,"[""ChestPainType""]",0.7836904568506601,0.02085915605818907
+1,RestingBP,"[""RestingBP""]",0.6732441223966648,0.017655382001667382
+1,Cholesterol,"[""Cholesterol""]",0.5671584286398698,0.031540769225821115
+1,FastingBS,"[""FastingBS""]",0.46295553154636354,0.017958706022965495
+1,RestingECG,"[""RestingECG""]",0.7122793774511001,0.0013843703145925432
+1,MaxHR,"[""MaxHR""]",0.7161280875220454,0.016485382608107956
+1,ExerciseAngina,"[""ExerciseAngina""]",0.7190306028109349,0.026776111128722805
+1,Oldpeak,"[""Oldpeak""]",0.7205405086445978,0.04251736649726156
+1,ST_Slope,"[""ST_Slope""]",0.8462266889749642,0.015439560393323556
+2,Age,"[""ST_Slope"", ""Age""]",0.8462266889749642,0.015439560393323556
+2,Sex,"[""ST_Slope"", ""Sex""]",0.8405950203470649,0.016439550467580416
+2,ChestPainType,"[""ST_Slope"", ""ChestPainType""]",0.8356951154052603,0.010495714604302389
+2,RestingBP,"[""ST_Slope"", ""RestingBP""]",0.8462266889749642,0.015439560393323556
+2,Cholesterol,"[""ST_Slope"", ""Cholesterol""]",0.864370830130917,0.00892866738544154
+2,FastingBS,"[""ST_Slope"", ""FastingBS""]",0.8462266889749642,0.015439560393323556
+2,RestingECG,"[""ST_Slope"", ""RestingECG""]",0.8462266889749642,0.015439560393323556
+2,MaxHR,"[""ST_Slope"", ""MaxHR""]",0.846256293004295,0.014321195446990802
+2,ExerciseAngina,"[""ST_Slope"", ""ExerciseAngina""]",0.8462266889749642,0.015439560393323556
+2,Oldpeak,"[""ST_Slope"", ""Oldpeak""]",0.843503153517616,0.012443734342872846
+3,Age,"[""ST_Slope"", ""Cholesterol"", ""Age""]",0.8598665579490956,0.014590770698721195
+3,Sex,"[""ST_Slope"", ""Cholesterol"", ""Sex""]",0.8609746006012092,0.014076836805108576
+3,ChestPainType,"[""ST_Slope"", ""Cholesterol"", ""ChestPainType""]",0.8487853903016358,0.010072157122058712
+3,RestingBP,"[""ST_Slope"", ""Cholesterol"", ""RestingBP""]",0.8626469423372374,0.01100463371548355
+3,FastingBS,"[""ST_Slope"", ""Cholesterol"", ""FastingBS""]",0.863668507756382,0.009754228809725068
+3,RestingECG,"[""ST_Slope"", ""Cholesterol"", ""RestingECG""]",0.864370830130917,0.00892866738544154
+3,MaxHR,"[""ST_Slope"", ""Cholesterol"", ""MaxHR""]",0.8622719904203816,0.013946524470233859
+3,ExerciseAngina,"[""ST_Slope"", ""Cholesterol"", ""ExerciseAngina""]",0.8505365379416686,0.02434940055630328
+3,Oldpeak,"[""ST_Slope"", ""Cholesterol"", ""Oldpeak""]",0.8640221862281461,0.009334406358867323
+4,Age,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Age""]",0.860885442446241,0.013253856056513092
+4,Sex,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Sex""]",0.8567048715081585,0.010716771705341167
+4,ChestPainType,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""ChestPainType""]",0.8459752593085926,0.007653807426144181
+4,RestingBP,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""RestingBP""]",0.8612617688875494,0.012765789229768992
+4,FastingBS,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""FastingBS""]",0.8643652851608863,0.009767518105762764
+4,MaxHR,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""MaxHR""]",0.8622719904203816,0.013946524470233859
+4,ExerciseAngina,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""ExerciseAngina""]",0.8529810618431796,0.0240763591952409
+4,Oldpeak,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak""]",0.8650450238720095,0.008171354843818741
+5,Age,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak"", ""Age""]",0.8650450238720095,0.008171354843818741
+5,Sex,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak"", ""Sex""]",0.8584362684749225,0.008662697814337749
+5,ChestPainType,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak"", ""ChestPainType""]",0.8454165715556764,0.015539699763302103
+5,RestingBP,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak"", ""RestingBP""]",0.8650450238720095,0.008171354843818741
+5,FastingBS,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak"", ""FastingBS""]",0.8647615364504536,0.006552790326409758
+5,MaxHR,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak"", ""MaxHR""]",0.8570838453900201,0.005832512835210427
+5,ExerciseAngina,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak"", ""ExerciseAngina""]",0.848651953022643,0.015222010518134757
+6,Sex,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak"", ""Age"", ""Sex""]",0.8608161964373359,0.007826411723587485
+6,ChestPainType,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak"", ""Age"", ""ChestPainType""]",0.8469924812030075,0.01962343597467104
+6,RestingBP,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak"", ""Age"", ""RestingBP""]",0.8623719242142432,0.008178465373669123
+6,FastingBS,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak"", ""Age"", ""FastingBS""]",0.8650450238720095,0.008171354843818741
+6,MaxHR,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak"", ""Age"", ""MaxHR""]",0.8567568959540081,0.005558107381404009
+6,ExerciseAngina,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak"", ""Age"", ""ExerciseAngina""]",0.8436412321957203,0.010374243269506606
+7,Sex,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak"", ""Age"", ""FastingBS"", ""Sex""]",0.8673771146111572,0.0028660505448930037
+7,ChestPainType,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak"", ""Age"", ""FastingBS"", ""ChestPainType""]",0.850788006598577,0.007570459415981541
+7,RestingBP,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak"", ""Age"", ""FastingBS"", ""RestingBP""]",0.8637484403298705,0.006487132838277417
+7,MaxHR,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak"", ""Age"", ""FastingBS"", ""MaxHR""]",0.8564816617747103,0.005531454169013454
+7,ExerciseAngina,"[""ST_Slope"", ""Cholesterol"", ""RestingECG"", ""Oldpeak"", ""Age"", ""FastingBS"", ""ExerciseAngina""]",0.8439685396205677,0.014918388067206948

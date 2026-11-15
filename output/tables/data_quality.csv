@@ -1,0 +1,13 @@
+feature,dtype,empty_cells,unique_values,invalid_nonpositive
+Age,int64,0,50,0
+Sex,str,0,2,0
+ChestPainType,str,0,4,0
+RestingBP,int64,0,67,1
+Cholesterol,int64,0,222,172
+FastingBS,int64,0,2,0
+RestingECG,str,0,3,0
+MaxHR,int64,0,119,0
+ExerciseAngina,str,0,2,0
+Oldpeak,float64,0,53,0
+ST_Slope,str,0,3,0
+HeartDisease,int64,0,2,0

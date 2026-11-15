@@ -1,0 +1,8 @@
+# Use consistent text files across operating systems.
+* text=auto eol=lf
+
+# Preserve the downloaded CSV byte-for-byte for SHA-256 verification.
+data/raw/heart.csv -text
+
+*.png binary
+*.pdf binary

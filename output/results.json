@@ -1,0 +1,213 @@
+{
+  "project": "BTech Heart Disease Classification",
+  "client_date": "2026-11-15",
+  "seed": 42,
+  "python_version": "3.12.14",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "joblib": "1.6.0",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0",
+    "reportlab": "4.4.9"
+  },
+  "dataset": {
+    "rows": 918,
+    "features": 11,
+    "normal": 410,
+    "disease": 508,
+    "source_sha256": "948420b084d8a3a0ca42b8419fce9aee175879e43f8aedf712377899a67aa49b",
+    "zero_cholesterol": 172,
+    "zero_resting_bp": 1
+  },
+  "split": {
+    "train": 734,
+    "test": 184,
+    "train_positive": 406,
+    "test_positive": 102,
+    "folds": 5,
+    "stratified": true
+  },
+  "selection": {
+    "metric": "mean training-CV F1",
+    "selected_before_test": "Logistic regression",
+    "no_test_based_retuning": true
+  },
+  "cv_summary": [
+    {
+      "model": "Logistic regression",
+      "cv_f1_mean": 0.8760524091433168,
+      "cv_f1_std": 0.027686829919476054,
+      "cv_recall_mean": 0.8916591388136104,
+      "cv_roc_auc_mean": 0.9267665186364373,
+      "candidate_settings": 6,
+      "best_parameters": "{\"model__C\": 0.1, \"model__class_weight\": null}"
+    },
+    {
+      "model": "Random forest",
+      "cv_f1_mean": 0.8756736165001298,
+      "cv_f1_std": 0.026160325231122654,
+      "cv_recall_mean": 0.8990364348087926,
+      "cv_roc_auc_mean": 0.9315147865283366,
+      "candidate_settings": 8,
+      "best_parameters": "{\"model__max_depth\": 8, \"model__max_features\": \"sqrt\", \"model__min_samples_leaf\": 2}"
+    },
+    {
+      "model": "Tuned CART",
+      "cv_f1_mean": 0.8645514469227603,
+      "cv_f1_std": 0.031280919136161475,
+      "cv_recall_mean": 0.8869015356820235,
+      "cv_roc_auc_mean": 0.9044188181586555,
+      "candidate_settings": 90,
+      "best_parameters": "{\"model__ccp_alpha\": 0.0, \"model__class_weight\": null, \"model__max_depth\": 4, \"model__min_samples_leaf\": 10}"
+    },
+    {
+      "model": "Unrestricted CART",
+      "cv_f1_mean": 0.8169846207738084,
+      "cv_f1_std": 0.052197550531075075,
+      "cv_recall_mean": 0.8078891900030112,
+      "cv_roc_auc_mean": 0.8002383012952119,
+      "candidate_settings": 1,
+      "best_parameters": "{}"
+    },
+    {
+      "model": "Majority baseline",
+      "cv_f1_mean": 0.7122785080547587,
+      "cv_f1_std": 0.0022870669986072927,
+      "cv_recall_mean": 1.0,
+      "cv_roc_auc_mean": 0.5,
+      "candidate_settings": 1,
+      "best_parameters": "{}"
+    }
+  ],
+  "test_results": [
+    {
+      "accuracy": 0.9021739130434783,
+      "precision": 0.8962264150943396,
+      "recall": 0.9313725490196079,
+      "specificity": 0.8658536585365854,
+      "f1": 0.9134615384615384,
+      "balanced_accuracy": 0.8986131037780967,
+      "roc_auc": 0.9346006695361071,
+      "average_precision": 0.93889073311443,
+      "brier_score": 0.09062705600631732,
+      "tn": 71,
+      "fp": 11,
+      "fn": 7,
+      "tp": 95,
+      "accuracy_ci_low": 0.8506764910480525,
+      "accuracy_ci_high": 0.9372219895598671,
+      "recall_ci_low": 0.8650704496132519,
+      "recall_ci_high": 0.9663617791231328,
+      "model": "Logistic regression",
+      "train_accuracy": 0.8651226158038147,
+      "train_f1": 0.8802902055622733
+    },
+    {
+      "accuracy": 0.907608695652174,
+      "precision": 0.897196261682243,
+      "recall": 0.9411764705882353,
+      "specificity": 0.8658536585365854,
+      "f1": 0.9186602870813397,
+      "balanced_accuracy": 0.9035150645624104,
+      "roc_auc": 0.936154949784792,
+      "average_precision": 0.9323558181773146,
+      "brier_score": 0.09258801874910244,
+      "tn": 71,
+      "fp": 11,
+      "fn": 6,
+      "tp": 96,
+      "accuracy_ci_low": 0.8570310893122134,
+      "accuracy_ci_high": 0.9415146680606782,
+      "recall_ci_low": 0.8775640550984952,
+      "recall_ci_high": 0.9727643606546253,
+      "model": "Random forest",
+      "train_accuracy": 0.9400544959128065,
+      "train_f1": 0.9467312348668281
+    },
+    {
+      "accuracy": 0.7934782608695652,
+      "precision": 0.82,
+      "recall": 0.803921568627451,
+      "specificity": 0.7804878048780488,
+      "f1": 0.8118811881188119,
+      "balanced_accuracy": 0.7922046867527499,
+      "roc_auc": 0.8613103778096605,
+      "average_precision": 0.8448104217493301,
+      "brier_score": 0.14902985422122872,
+      "tn": 64,
+      "fp": 18,
+      "fn": 20,
+      "tp": 82,
+      "accuracy_ci_low": 0.7292762879475977,
+      "accuracy_ci_high": 0.8456766573608842,
+      "recall_ci_low": 0.7164524743574987,
+      "recall_ci_high": 0.8693293231613177,
+      "model": "Tuned CART",
+      "train_accuracy": 0.8623978201634878,
+      "train_f1": 0.8748451053283767
+    },
+    {
+      "accuracy": 0.7336956521739131,
+      "precision": 0.7789473684210526,
+      "recall": 0.7254901960784313,
+      "specificity": 0.7439024390243902,
+      "f1": 0.751269035532995,
+      "balanced_accuracy": 0.7346963175514107,
+      "roc_auc": 0.7346963175514108,
+      "average_precision": 0.7172925920940458,
+      "brier_score": 0.266304347826087,
+      "tn": 61,
+      "fp": 21,
+      "fn": 28,
+      "tp": 74,
+      "accuracy_ci_low": 0.6655240494012805,
+      "accuracy_ci_high": 0.7923088514925106,
+      "recall_ci_low": 0.6318943708450752,
+      "recall_ci_high": 0.8027179305398532,
+      "model": "Unrestricted CART",
+      "train_accuracy": 1.0,
+      "train_f1": 1.0
+    },
+    {
+      "accuracy": 0.5543478260869565,
+      "precision": 0.5543478260869565,
+      "recall": 1.0,
+      "specificity": 0.0,
+      "f1": 0.7132867132867133,
+      "balanced_accuracy": 0.5,
+      "roc_auc": 0.5,
+      "average_precision": 0.5543478260869565,
+      "brier_score": 0.44565217391304346,
+      "tn": 0,
+      "fp": 82,
+      "fn": 0,
+      "tp": 102,
+      "accuracy_ci_low": 0.48214865465320533,
+      "accuracy_ci_high": 0.6243241129965135,
+      "recall_ci_low": 0.9637055378535367,
+      "recall_ci_high": 0.9999999999999999,
+      "model": "Majority baseline",
+      "train_accuracy": 0.553133514986376,
+      "train_f1": 0.712280701754386
+    }
+  ],
+  "cart": {
+    "parameters": {
+      "model__ccp_alpha": 0.0,
+      "model__class_weight": null,
+      "model__max_depth": 4,
+      "model__min_samples_leaf": 10
+    },
+    "depth": 4,
+    "leaves": 15
+  },
+  "top_cart_permutation_features": [
+    "ST_Slope",
+    "ChestPainType",
+    "MaxHR"
+  ],
+  "completed": true
+}

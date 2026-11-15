@@ -1,0 +1,17 @@
+{
+  "reviewed_at_utc": "2026-11-15T09:02:49.739133+00:00",
+  "scope": "CART-inspired baseline with classifier comparisons and feature reduction only",
+  "notebooks": 2,
+  "executed_code_cells": 29,
+  "behavioral_tests": 8,
+  "artifact_and_publication_checks": 273,
+  "pdf_visual_review": {
+    "method": "All pages rendered with Poppler and inspected by the assistant",
+    "pages_reviewed": 12,
+    "layout_issues_found": 0
+  },
+  "pdf_sha256": {
+    "heart_disease_feature_selection.pdf": "aa1eea3cc6489b94649bf40f093d9e81030f76e8e33d23089771ead1ab914030",
+    "heart_disease_project_report.pdf": "e8a0f872ccdb34be750b9a3286121cf7613037a172b4a3bfdebfe4edb68a278c"
+  }
+}
